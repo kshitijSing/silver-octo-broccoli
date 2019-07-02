@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+        <title>series 1</title>
+       
+        <h1 id="min" align="center">General form<br>f(n) = (2<sup>n</sup>-1) </h1>
+        <style type="text/css">
+            body{
+                background: url("bg1.jpeg");
+            }
+            #inp
+        {
+            color: white;
+            font-size: 56px;
+            font-family: sans-serif;
+
+        }
+        h1
+        {
+            color: white;
+            text-align: center;
+            font-size: 70px;
+        }
+        input
+        {    width: 150px;
+            height: 50px;
+            font-size: 49px;
+                        outline: none;
+                 border-style: line;
+-moz-border-radius:20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Chrome */
+     border-radius: 20px; /* CSS3 */
+       border-style: solid line;
+
+
+        }
+#sub
+{
+    width: auto;
+            height: 50px;
+            font-size: 49px;
+             padding: 50px;
+            outline: none;
+                 border-style: line;
+-moz-border-radius:20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Chrome */
+     border-radius: 20px; /* CSS3 */
+           cursor: pointer;
+      border-style: solid line;
+     align-content: center;
+     align-items: center; 
+
+}
+#sub:hover
+{ 
+    font-size: 25px;
+    color: gray;
+    border-color: black;
+   
+}
+        </style>
+    </head>
+    <body  >
+        <div id="inp" align="center">
+       n1 =  <input type="text" name="firstno" id="firstno"  ><br>
+     n2 = <input type="text" name="secondno" id="secondno"  ><br><br>        
+
+         <script type="text/javascript">
+                function generateseries(){
+                        var text = "";
+
+                    var fno = document.getElementById("firstno").value;
+                    var sno = document.getElementById("secondno").value;
+                    var a = parseInt(fno);
+                   
+ 
+                    for(var i =a;i<=sno;i++) {  
+                    var all = new Array();
+                      c = Math.pow(2,i) - 1;
+                      text += c + "      ";
+                     
+
+                     }
+                         document.getElementById("demo").innerHTML = text;
+
+  
+                }
+                 function myFun()
+                {
+                     var str = "n";
+                   var result = "Minimum number of moves of disks in tower of hanoi 2"+str.sup()+"-1";
+                     document.getElementById("min").innerHTML = result;
+                       
+                }
+               
+                </script>
+       <input type="submit" align="center" id="sub"  onclick="generateseries();">
+       <button value="harsha"  id="result"  onclick="myFun();"</button>
+        <h1 id="maindiv"></h1>
+                <p align="center" id="demo"></p></div>
+
+    </body>
+</html>

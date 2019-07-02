@@ -1,0 +1,41 @@
+             Main objective of our project ->>>RECURSION AND ITS APPLICATIONS.
+
+Algorithms ->>> Reucrsion.
+
+Functions  ->>> generateseries(),signin(),factorial(),fibonacci(),minmumnuberofmovesTOH()
+                formvalidation().
+
+Number of webpages ->> 13.
+
+Small description:
+
+>Solving linear recursion realtions.
+
+>Finding minimum number of moves of disks in tower of hanoi.
+
+>Generating fibonacci series in given range.
+
+>Generating 2^n-1 series in given range.
+
+>Generating odd number series in given range.
+
+>Finding factorial of given number.
+
+Team memebers->>SURISETTY HARSHAVARDHAN [201752039]
+              >>KSHITIJ GANGWAR[201752021]
+              >>SHIVAM NIGAM [201752035]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

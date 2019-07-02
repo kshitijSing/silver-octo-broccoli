@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" >
+		body
+		{
+			background: 100%  url(bg1.jpeg);
+ 			 
+		}
+		.inp
+		{
+			color: white;
+			font-size: 56px;
+			font-family: sans-serif;
+
+		}
+		p
+		{
+			color: white;
+			text-align: center;
+			font-size: 70px;
+		}
+		input
+		{    width: 50px;
+			height: 50px;
+			font-size: 49px;
+
+		}
+#sub
+{
+	width: auto;
+ 			height: 50px;
+			font-size: 49px;
+			 padding: 50px;
+			outline: none;
+			     border-style: line;
+-moz-border-radius:20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Chrome */
+     border-radius: 20px; /* CSS3 */
+           cursor: pointer;
+      border-style: solid line;
+      
+
+}
+button:hover
+{ 
+	font-size: 25px;
+	color: gray;
+	border-color: black;
+   
+}
+
+	</style>
+</head>
+<body >
+
+
+			<p>General form of recursive function<br> a f(n-b)+c (n-d)   </p>
+		 
+			 <div class="inp">
+			
+ 	        f(n) =  <input size="4" type="text" name="firstno" id="firstno"  >
+              f(n-<input type="text" size="4" name="secondno" id="secondno"  >) + 
+              <input type="text" size="4" name="firstno" id="firstn"  >
+              f(n-<input type="text" size="4" name="secondno" id="secondn"  >)<br><br>
+           
+             f(0) =  <input size="4" type="text" name="b1" id="b1" >
+             f(1) =  <input size="4" type="text" name="b2" id="b2" ><br><br>
+               n =  <input size="4" type="text" name="n" id="n" ></div><br>
+ <button id="sub" onclick="Fun2()">Print</button>
+			<p id="demo"></p>
+
+          
+			
+			<p id="input"> f(n) = </p>
+
+			<script type="text/javascript">
+			var a1,a2,a3,a4,b1,b2;
+ 			var n;
+			var x;
+
+			
+   
+	
+			
+		 
+			
+
+			function Fun2(){
+
+					 
+			          a1 = document.getElementById("firstno").value;
+                      a2 = document.getElementById("secondno").value;
+                      a3 = document.getElementById("firstn").value;
+                      a4 = document.getElementById("secondn").value;
+                       n = document.getElementById("n").value;
+                      b1 = document.getElementById("b1").value;
+                      b2 = document.getElementById("b2").value;
+ 
+					 
+				                                   var ans=Fun1(n);
+ 			    document.getElementById("input").innerHTML=ans;
+			}
+			function Fun1(n){
+				
+                   
+				if(n===0)
+					return b1;
+				if(n===1)
+					return b2;
+
+					else
+				return a1*Fun1(n-a2)+a3*Fun1(n-a4);
+				
+			}
+			
+		</script>
+
+		
+		
+</body>
+</html>

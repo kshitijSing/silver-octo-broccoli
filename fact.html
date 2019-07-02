@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+        	body
+        	{
+        		background: url(bg1.jpeg);
+                color: white;
+                font-size: 30px;
+        	}
+        	 
+			   input
+			   {
+			   	 width: 40%;
+			height: 50px;
+			font-size: 49px;
+			   	outline: none;
+			     border-style: line;
+-moz-border-radius:20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Chrome */
+     border-radius: 20px; /* CSS3 */
+       border-style: solid line;
+			   }
+        	p
+        	{
+        		color: white;
+                font-size: 40px;
+                text-align: center;
+
+        	}
+            p:hover
+            {
+                color: white;
+                font-size: 60px;
+                text-align: center;
+            }
+        	button:hover
+{ 
+	font-size: 25px;
+	color: gray;
+	border-color: black;
+	font-size: 49px;
+			   	outline: none;
+			     border-style: line;
+-moz-border-radius:20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Chrome */
+     border-radius: 20px; /* CSS3 */
+       border-style: solid line;
+   
+}
+    	button
+{ 
+	font-size: 25px;
+	color: black;
+	border-color: black;
+	
+			   	outline: none;
+			     border-style: line;
+-moz-border-radius:20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Chrome */
+     border-radius: 20px; /* CSS3 */
+       border-style: solid line;
+         align-content: center;
+}
+        </style>
+<script>
+function show(){
+
+var n, no;
+ 
+n=Number(document.getElementById("num").value);
+  
+//recursive
+var factorial = function(n) {
+    if(n == 0) {
+        return 1
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+ 
+ document.getElementById("answer").innerHTML= factorial(n);
+}
+</script>
+</head>
+<body>
+
+Enter Num: <input align="center" id="num"><br><br>
+<button  onclick="show()">Factorial</button><br><br>
+	<p id="answer"></p>
+
+</body>
+</html>

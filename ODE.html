@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        h1{
+            font-size: 72px;
+            font-family: sans-serif;
+            color: white;
+        }
+        p
+        {
+            color: white;
+            font-size: 36px;
+        }
+        #result:hover
+{ 
+    font-size: 25px;
+    color: gray;
+    border-color: black;
+    cursor: pointer;
+   
+}
+            input
+            {
+                width: 150px;
+            height: 50px;
+            font-size: 32px;
+                            outline: none;
+                 border-style: line;
+-moz-border-radius:20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Chrome */
+     border-radius: 20px; /* CSS3 */
+       border-style: solid line;
+            }
+            body{
+                background: url(bg1.jpeg);
+            }
+            #resultdiv
+            {
+                 color: white;
+            }
+        </style>
+        <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+        <title>fibonacci series</title>
+       
+        <h1 id="min" align="center">Odd numbers series</h1>
+    </head>
+    <body>
+        <div id="resultdiv" align="center">
+         Range of n = <input type="text" name="secondno" id="secondno"  ><br><br>
+         <script type="text/javascript">
+                function generateseries(){
+                        var text = "";
+
+                    //var fno = document.getElementById("firstno").value;
+                    var sno = document.getElementById("secondno").value;
+                    //var a = parseInt(fno);
+                    var c=0;
+ 
+                    for(var i =0;i<=sno/2;i++) {  
+                    var all = new Array();
+                      c = 2*i + 1;
+                      text += c + "      ";
+                    
+
+                     }
+                         document.getElementById("demo").innerHTML = text;
+
+  
+                }
+              
+               
+                </script>
+        <input type="submit" id="result"  onclick="generateseries();">
+        
+        <h1 id="maindiv"></h1>
+        </div>
+                <p align="center" id="demo"></p>
+
+    </body>
+</html>
